@@ -1,0 +1,14 @@
+* Emacs configuration
+** Change the elpa-archives to be accessible in China
+  #+BEGIN_SRC elisp
+  ;; set melpa
+  (setq
+   configuration-layer--elpa-archives
+   '(("gun" . "http://elpa.emacs-china.org/gnu/")
+     ("org" . "http://elpa.emacs-china.org/org/")
+     ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+  #+END_SRC
+** Start emacs with --insecure
+  #+BEGIN_SRC elisp
+  (setq  dotspacemacs-elpa-https nil)
+  #+END_SRC
