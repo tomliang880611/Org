@@ -16,6 +16,6 @@
    #+begin_src elisp
   (with-eval-after-load 'linum
     (linum-relative-toggle))
-
+  ;; enable global linum mode
   (global-linum-mode)
    #+end_src

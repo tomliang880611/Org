@@ -1,0 +1,7 @@
+* Python config in MacOS
+** Toggle python
+   *3.5.1* to be repaced by actual python version.
+    #+begin_src shell
+    pyenv install 3.5.1
+    pyenv global 3.5.1
+    #+end_src
