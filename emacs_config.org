@@ -13,9 +13,9 @@
   (setq  dotspacemacs-elpa-https nil)
   #+END_SRC
 ** Set up linum-mode
-   #+begin_src elisp
+   #+BEGIN_SRC elisp
   (with-eval-after-load 'linum
     (linum-relative-toggle))
   ;; enable global linum mode
   (global-linum-mode)
-   #+end_src
+   #+END_SRC
