@@ -1,4 +1,4 @@
-* Steps to push a git project
+* Steps to create and push to a remote repo
   #+BEGIN_SRC shell
   git init
   git remote add origin https://github.com/tomliang880611/Org.git
