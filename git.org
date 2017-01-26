@@ -1,11 +1,13 @@
 * Steps to push a git project
-** git init
-** git remote add origin https://github.com/tomliang880611/Org.git
-** git status
-** git push -u origin master
-** git commit -m "Commit the configuration notes for emacs"
-** git add .
-** git status
-** git commit -m "Commit the configuration notes for emacs"
-** git push
-** git push --set-upstream origin master
+  #+BEGIN_SRC shell
+  git init
+  git remote add origin https://github.com/tomliang880611/Org.git
+  git status
+  git push -u origin master
+  git commit -m "Commit the configuration notes for emacs"
+  git add .
+  git status
+  git commit -m "Commit the configuration notes for emacs"
+  git push
+  git push --set-upstream origin master
+  #+END_SRC 
