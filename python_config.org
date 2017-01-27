@@ -1,4 +1,8 @@
+#+TITLE: Python Config Notes
+#+STARTUP: showall
+
 * Python config in MacOS
+** Enable python layer in spacemacs
 ** Install pyenv
   #+begin_src shell
   brew install pyenv

@@ -1,5 +1,9 @@
+#+TITLE: Emacs Configuration Notes
+#+STARTUP: nohideblocks
+#+STARTUP: showall
+
 * Emacs configuration
-** Change the elpa-archives to be accessible in China
+** Change the /elpa-archives/ to be accessible in China
   #+BEGIN_SRC elisp
   ;; set melpa
   (setq
@@ -8,11 +12,11 @@
      ("org" . "http://elpa.emacs-china.org/org/")
      ("melpa" . "http://elpa.emacs-china.org/melpa/")))
   #+END_SRC
-** Start emacs with --insecure
+** Start emacs with /--insecure/
   #+BEGIN_SRC elisp
   (setq  dotspacemacs-elpa-https nil)
   #+END_SRC
-** Set up linum-mode
+** Set up /linum-mode/
    #+BEGIN_SRC elisp
   (with-eval-after-load 'linum
     (linum-relative-toggle))
