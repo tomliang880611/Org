@@ -1,110 +1,110 @@
 #+TITLE: Words & Phrases
 #+STARTUP: overview
 
-* Teen Wolf S10E01
-** Catatonic
-*** Catatonic act
-** Regresion
-*** regression test
-*** in the progress of regression
-** The scale to *tip* one way or the other.
-** I think the storm *takes* the cell tower *out*.
-** Senior Scribe
-*** an offical or public secretary or clerk
-
-* Bones S10E06
-** Excrement
-*** Shit, scat, poop, poo, scrap
-** decedent
-*** a person who is no longer living
-** Silt
-*** deposit or sediment (as by a river)
-** Distal
-*** anatomy: situated away from the point of attachment or origin or central point especially of the body
-*** dentistry: of, relating to, or being the surface of a tooth that is next to the tooth behind it
-** Make sexual advances on someone
-** Sexual predatar
-** Pedophile 
-*** relating to pedohilia
-**** Pedophilia: 
+** Teen Wolf S10E01
+*** Catatonic
+**** Catatonic act
+*** Regresion
+**** regression test
+**** in the progress of regression
+*** The scale to *tip* one way or the other.
+*** I think the storm *takes* the cell tower *out*.
+*** Senior Scribe
+**** an offical or public secretary or clerk
+*
+** Bones S10E06
+*** Excrement
+**** Shit, scat, poop, poo, scrap
+*** decedent
+**** a person who is no longer living
+*** Silt
+**** deposit or sediment (as by a river)
+*** Distal
+**** anatomy: situated away from the point of attachment or origin or central point especially of the body
+**** dentistry: of, relating to, or being the surface of a tooth that is next to the tooth behind it
+*** Make sexual advances on someone
+*** Sexual predatar
+*** Pedophile 
+**** relating to pedohilia
+***** Pedophilia: 
      sexual perversion in which children are the preferred sexual object;
-     a psychological disorder in which an adult has sexual fantasies about or engages in sexual acts with a prepubescent child
-** Reticence 
-*** Reticent
-    1. inclined to be silent or uncommunicative in speech
-    2. restrained in expression, presentation, or appearance
-    3. recuctant
-** Molester 
-   1. to annoy, disturb, or persecute especially with hostile intent or injurious effect
-** Particulate
-** Treads
-** Anterior
-** Stich
-** Swab
-** Exploit
-** Abrasion
-** Serrations
-** Carotid
-** Groovies
-** Ridging
-** Disconcerning
-** Cuticle
-
-* Bones S10E07
-** Profanity
-** Endophine
-** Subpunic
-** Coarse
-** Incision
-** Maxilla
-** Scraple offical
-** Veneers
-** Melanine
-** Lobe
-** Lo-fi
-** Contour
-** Hedge fund
-** Measly 
-** Lock someone out
-** Zoysia
-** Insectcide
-** Septum 
-** Save someone's own skin
-** Retribution
-** Oaks
-** Fumigated
-** Coked up
-** Perimoterm
-** Cylindical
-** Spiky weapon
-** Collateral
-** Wicunal wool
-** Postmodern
-** Depression fracture
-** Amylase
-** Gullible
-** Shave off 
-** Out of line
-** You think you get it out of the system
-** Emerald 
-** Chip it
-** Lodge it in something
-** Accolades 
-** Quark
-** It is not easy, but nothing of value is.
-** Cut her some slack
-
-* Bones S10E08
-** doula
-** fracking pit
-** seismic
-** overboard
-*** over zealous
-** porous
-** recluse
-** womb
-** We are flesh and blood. 
-
-* Bones S10E08
+*     a psychological disorder in which an adult has sexual fantasies about or engages in sexual acts with a prepubescent child
+*** Reticence 
+**** Reticent
+*    1. inclined to be silent or uncommunicative in speech
+*    2. restrained in expression, presentation, or appearance
+*    3. recuctant
+*** Molester 
+*   1. to annoy, disturb, or persecute especially with hostile intent or injurious effect
+*** Particulate
+*** Treads
+*** Anterior
+*** Stich
+*** Swab
+*** Exploit
+*** Abrasion
+*** Serrations
+*** Carotid
+*** Groovies
+*** Ridging
+*** Disconcerning
+*** Cuticle
+*
+** Bones S10E07
+*** Profanity
+*** Endophine
+*** Subpunic
+*** Coarse
+*** Incision
+*** Maxilla
+*** Scraple offical
+*** Veneers
+*** Melanine
+*** Lobe
+*** Lo-fi
+*** Contour
+*** Hedge fund
+*** Measly 
+*** Lock someone out
+*** Zoysia
+*** Insectcide
+*** Septum 
+*** Save someone's own skin
+*** Retribution
+*** Oaks
+*** Fumigated
+*** Coked up
+*** Perimoterm
+*** Cylindical
+*** Spiky weapon
+*** Collateral
+*** Wicunal wool
+*** Postmodern
+*** Depression fracture
+*** Amylase
+*** Gullible
+*** Shave off 
+*** Out of line
+*** You think you get it out of the system
+*** Emerald 
+*** Chip it
+*** Lodge it in something
+*** Accolades 
+*** Quark
+*** It is not easy, but nothing of value is.
+*** Cut her some slack
+*
+** Bones S10E08
+*** doula
+*** fracking pit
+*** seismic
+*** overboard
+**** over zealous
+*** porous
+*** recluse
+*** womb
+*** We are flesh and blood. 
+*
+** Bones S10E08
 ** bulge
 ** 
