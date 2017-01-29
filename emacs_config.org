@@ -2,7 +2,7 @@
 #+STARTUP: nohideblocks
 #+STARTUP: showall
 
-* Emacs configuration
+* Emacs configuration Notes
 ** Change the /elpa-archives/ to be accessible in China
   #+BEGIN_SRC elisp
   ;; set melpa
