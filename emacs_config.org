@@ -23,3 +23,7 @@
   ;; enable global linum mode
   (global-linum-mode)
    #+END_SRC
+
+   
+* Emacs Use Notes
+** To debug =emacs lisp= use =c-u C-M-X= in =Insert Mode=
