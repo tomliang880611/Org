@@ -23,7 +23,10 @@
   ;; enable global linum mode
   (global-linum-mode)
    #+END_SRC
-
+** Set up tern in Mac
+   #+BEGIN_SRC sh
+  brew install --with-cocoa --srgb emacs
+   #+END_SRC
    
 * Emacs Use Notes
 ** To debug =emacs lisp= use =c-u C-M-X= in =Insert Mode=
