@@ -30,3 +30,8 @@
    
 * Emacs Use Notes
 ** To debug =emacs lisp= use =c-u C-M-X= in =Insert Mode=
+
+* PlantUML should be installed and configured for UML
+** Download the plantuml.jar from maven repo
+** Download graphviz if diagrams other than sequence and activity are needed
+** Set the environment variable GRAPHVIZ_DOT to C:\Users\43999174\graphviz-2.38\release\bin\dot.exe for instance
