@@ -35,3 +35,14 @@
 ** Download the plantuml.jar from maven repo
 ** Download graphviz if diagrams other than sequence and activity are needed
 ** Set the environment variable GRAPHVIZ_DOT to C:\Users\43999174\graphviz-2.38\release\bin\dot.exe for instance
+
+* Set default font for =spacemacs=
+#+BEGIN_SRC emacs-lisp
+   ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
+   ;; quickly tweak the mode-line size to make separators look not too crappy.
+   dotspacemacs-default-font
+   '("Courier New" :size 25
+     :weight normal
+     :width normal
+     :powerline-scale 1.1)
+#+END_SRC
