@@ -1,0 +1,55 @@
+#+title: Notes for installing, customizing and using arch linux
+#+startup: overview
+
+* Installation
+
+** bootable settings
+
+*** partition disk
+    - Note taken on [2017-05-01 Mon 16:44] \\
+      Create four partitions
+      ** EFI partition with the size of 1GiB, formatted in fat32
+      ** Swap partition with size = RAM * 1 ~ 1.5
+      ** Partition for root directory 20GiB formatted in ext4
+      ** /home the rest of disk formatted in ext4
+#+BEGIN_SRC shell
+gdisk
+cgdisk
+#+END_SRC
+*** create bootable
+#+BEGIN_SRC shell
+pacman -S intel-ucode
+vi /boot/loader/entries/arch.conf
+#+END_SRC
+*** Make sure efivarfs is correctly mounted
+#+BEGIN_SRC shell
+mount -t efivarfs efivarfs /sys/firmware/efi/efivars/
+#+END_SRC
+*** install bootctl
+#+BEGIN_SRC shell
+bootctl install
+#+END_SRC
+*** modify arch.conf
+    - Note taken on [2017-05-01 Mon 16:50] \\
+      PARTUUID is used for options
+#+BEGIN_SRC shell
+blkid -s PARTUUID -o value /dev/nvme0n1p3 > /boot/loader/entries/arch.conf
+vi /boot/loader/entries/arch.conf
+#+END_SRC
+** Load nvida driver
+#+BEGIN_SRC shell
+pacman -S nvidia nvidia-libgl lib32-nvidia-libgl lib32-nvidia-utils nvidia-utils
+#+END_SRC
+** Load desktop
+** Install gnome
+#+BEGIN_SRC shell
+sudo pacman -S gnome gnome-extra
+sudo pacman -S gdm
+sudo systemctl enable gdm.service
+sudo pacman -S gnome-tweak-tool
+#+END_SRC
+** Enable NetworkManager
+#+BEGIN_SRC shell
+sudo systemctl enable NetworkManager.service
+reboot
+#+END_SRC
