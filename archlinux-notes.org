@@ -53,9 +53,12 @@ pacman -S nvidia nvidia-libgl lib32-nvidia-libgl lib32-nvidia-utils nvidia-utils
  sudo pacman -S gdm
  sudo systemctl enable gdm.service
  sudo pacman -S gnome-tweak-tool
+
  #+END_SRC
 *** Enable NetworkManager
  #+BEGIN_SRC shell
+ sudo systemctl disable netctl-auto@wlp2s0.service
+ sudo systemctl disable dhcpcd@wlp2s0.service
  sudo systemctl enable NetworkManager.service
  reboot
  #+END_SRC
