@@ -29,12 +29,12 @@
    #+END_SRC
    
 * Emacs Use Notes
-** To debug =emacs lisp= use =c-u C-M-X= in =Insert Mode=
+*** To debug =emacs lisp= use =c-u C-M-X= in =Insert Mode=
 
 * PlantUML should be installed and configured for UML
-** Download the plantuml.jar from maven repo
-** Download graphviz if diagrams other than sequence and activity are needed
-** Set the environment variable GRAPHVIZ_DOT to C:\Users\43999174\graphviz-2.38\release\bin\dot.exe for instance
+*** Download the plantuml.jar from maven repo
+*** Download graphviz if diagrams other than sequence and activity are needed
+*** Set the environment variable GRAPHVIZ_DOT to C:\Users\43999174\graphviz-2.38\release\bin\dot.exe for instance
 
 * Set default font for =spacemacs=
 #+BEGIN_SRC emacs-lisp
@@ -48,35 +48,36 @@
 #+END_SRC
 
 * Skewer Mode Notes
-** Add tamperMonkey script
-   - Note taken on [2017-04-26 Wed 22:16] \\
-     for =match= the "*" should come after "/"
-#+BEGIN_SRC js2
-// ==UserScript==
-// @name         Load Skewer Script to localhost
-// @namespace    http://localhost
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
-// @match        http://127.0.0.1/*
-// @grant        none
-// ==/UserScript==
-(function() {
-    'use strict';
+*** Add tamperMonkey script
+    - Note taken on [2017-04-26 Wed 22:16] \\
+      for =match= the "*" should come after "/"
+ #+BEGIN_SRC js2
+ // ==UserScript==
+ // @name         Load Skewer Script to localhost
+ // @namespace    http://localhost
+ // @version      0.1
+ // @description  try to take over the world!
+ // @author       You
+ // @match        http://127.0.0.1/*
+ // @grant        none
+ // ==/UserScript==
+ (function() {
+     'use strict';
 
-    var d=document;
-    var s=d.createElement('script');
-    s.src='http://localhost:8080/skewer';
-    d.body.appendChild(s);
+     var d=document;
+     var s=d.createElement('script');
+     s.src='http://localhost:8080/skewer';
+     d.body.appendChild(s);
 
-})();
-#+END_SRC
-** DO NOT need to run =run-skewer= from emacs
+ })();
+ #+END_SRC
+*** DO NOT need to run =run-skewer= from emacs
 
-   - Note taken on [2017-04-26 Wed 22:13] \\
-     Manually run =run-skewer= will create multiple clients, which
-     causes issues when eval js commands from emacs.
+    - Note taken on [2017-04-26 Wed 22:13] \\
+      Manually run =run-skewer= will create multiple clients, which
+      causes issues when eval js commands from emacs.
      
-     It seems emacs is retrieving multiple sessions that are alive, and render some issues as a result. 
+      It seems emacs is retrieving multiple sessions that are alive, and render some issues as a result. 
      
-     ReferenceNoFound issue.
+      ReferenceNoFound issue.
+*** Use =httpd-start= when emacs is not acting as the web server
