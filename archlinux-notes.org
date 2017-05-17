@@ -62,3 +62,11 @@ pacman -S nvidia nvidia-libgl lib32-nvidia-libgl lib32-nvidia-utils nvidia-utils
  sudo systemctl enable NetworkManager.service
  reboot
  #+END_SRC
+
+* Usage
+
+** chmod for files and dir for git
+#+BEGIN_SRC shell
+find . -type d -exec chmod 731 {} \;
+find . -type f -exec chmod 644 {} \;
+#+END_SRC
