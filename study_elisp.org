@@ -1,0 +1,18 @@
+#+title: Learning emacs lisp
+#+startup: showall
+
+* =tolist=
+  #+BEGIN_SRC elisp
+  ;;; do list
+  (dolist (val '(1 2 3 4 5))
+  (message (concat (number-to-string val) " is printed...")))
+  #+END_SRC
+
+* =mapcar=
+  #+BEGIN_SRC elisp
+  ;;; result (2 3 4 5 6)
+  (mapcar (lambda (val) (+ val 1)) '(1 2 3 4 5))  
+  #+END_SRC
+
+  #+RESULTS:
+  | 2 | 3 | 4 | 5 | 6 |
