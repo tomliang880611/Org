@@ -1,18 +1,41 @@
 #+title: Learning emacs lisp
 #+startup: showall
 
-* =tolist=
-  #+BEGIN_SRC elisp
-  ;;; do list
-  (dolist (val '(1 2 3 4 5))
-  (message (concat (number-to-string val) " is printed...")))
-  #+END_SRC
+* mapping
+** =tolist=
+   #+BEGIN_SRC elisp
+     ;;; do list
+     (dolist (val '(1 2 3 4 5))
+       (message (concat (number-to-string val) " is printed...")))
+   #+END_SRC
 
-* =mapcar=
-  #+BEGIN_SRC elisp
-  ;;; result (2 3 4 5 6)
-  (mapcar (lambda (val) (+ val 1)) '(1 2 3 4 5))  
-  #+END_SRC
+** =mapcar=
+   #+BEGIN_SRC elisp
+     (mapcar (lambda (val) (+ val 1)) '(1 2 3 4 5))
+     (mapcar 'car '((a b) (c d) (e f)))
+   #+END_SRC
 
-  #+RESULTS:
-  | 2 | 3 | 4 | 5 | 6 |
+   #+RESULTS:
+   | a | c | e |
+
+** =mapconcat=
+   #+BEGIN_SRC elisp
+     (mapconcat 'symbol-name
+		'(The cat in the hat)
+		" ")
+
+     (mapconcat (function (lambda (x) (format "%c" (1+ x))))
+		"HAL-8000"
+		"")
+   #+END_SRC
+
+   #+RESULTS:
+   : IBM.9111
+
+** reduce
+   #+BEGIN_SRC elisp
+     (reduce (lambda (result val) (concat result " " val)) '("test" "is" "game"))
+   #+END_SRC
+
+   #+RESULTS:
+   : test is game
