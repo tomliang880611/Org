@@ -28,7 +28,7 @@
   brew install --with-cocoa --srgb emacs
    #+END_SRC
 ** Notes for installing org
-   Sometimes, the following error occurres, as a result of inappropriate installation of org
+   Sometimes, the following error occurs, as a result of inappropriate installation of org
    Check the Org installation by the following from the =M-x=
    #+BEGIN_SRC elisp
    org-version
