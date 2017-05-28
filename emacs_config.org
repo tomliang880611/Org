@@ -35,6 +35,7 @@
    #+END_SRC
    Then, check the installation path and verify the package being properly installed. In case
    of this not being installed, install Org from =package-list-package=
+   - Try remove =.elc= files for org to remove block being blocked from executing
 ** Install =ispell= in archlinux
    #+BEGIN_SRC sh
      sudo pacman -S ispell

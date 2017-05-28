@@ -45,8 +45,21 @@
 
 ** reduce
    #+BEGIN_SRC emacs-lisp
-     (reduce (lambda (result val) (concat result " " val)) '("test" "'is" "game"))
+     (reduce (lambda (result val) (concat result " " val)) '("test" "is" "game"))
    #+END_SRC
 
    #+RESULTS:
    : test is game
+
+* list
+
+** =alist=
+   #+BEGIN_SRC emacs-lisp
+     (let ((test--package-archives '(("gnu" . "http://elpa.gnu.org/packages/"))))
+       (add-to-list 'test--package-archives '("test1" . "test1 value"))
+       (add-to-list 'test--package-archives '("test2" . "test1 value"))
+       (add-to-list 'test--package-archives '("test2" . "test1 value being changed")))
+   #+END_SRC
+
+   #+RESULTS:
+   : ((test2 . test1 value being changed) (test2 . test1 value) (test1 . test1 value) (gnu . http://elpa.gnu.org/packages/))
