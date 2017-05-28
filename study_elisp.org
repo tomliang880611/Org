@@ -1,6 +1,17 @@
 #+title: Learning emacs lisp
 #+startup: showall
 
+
+* basic operation
+** =car= and =cdr=
+   #+BEGIN_SRC elisp
+     (car '(this is a game and not a test))
+     (cdr '(this is a game and not a test))
+   #+END_SRC
+
+   #+RESULTS:
+   | is | a | game | and | not | a | test |
+
 * mapping
 ** =tolist=
    #+BEGIN_SRC elisp
@@ -33,8 +44,8 @@
    : IBM.9111
 
 ** reduce
-   #+BEGIN_SRC elisp
-     (reduce (lambda (result val) (concat result " " val)) '("test" "is" "game"))
+   #+BEGIN_SRC emacs-lisp
+     (reduce (lambda (result val) (concat result " " val)) '("test" "'is" "game"))
    #+END_SRC
 
    #+RESULTS:

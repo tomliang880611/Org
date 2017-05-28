@@ -9,7 +9,7 @@
   (setq
    configuration-layer--elpa-archives
    '(("gun" . "http://elpa.emacs-china.org/gnu/")
-     ("org" . "http://elpa.emacs-china.org/org/")
+     ("orgt" . "http://elpa.emacs-china.org/org/")
      ("melpa" . "http://elpa.emacs-china.org/melpa/")))
   #+END_SRC
 ** Start emacs with /--insecure/
@@ -27,14 +27,26 @@
    #+BEGIN_SRC sh
   brew install --with-cocoa --srgb emacs
    #+END_SRC
-   
+** Notes for installing org
+   Sometimes, the following error occurres, as a result of inappropriate installation of org
+   Check the Org installation by the following from the =M-x=
+   #+BEGIN_SRC elisp
+   org-version
+   #+END_SRC
+   Then, check the installation path and verify the package being properly installed. In case
+   of this not being installed, install Org from =package-list-package=
+** Install =ispell= in archlinux
+   #+BEGIN_SRC sh
+     sudo pacman -S ispell
+   #+END_SRC
+
 * Emacs Use Notes
 *** To debug =emacs lisp= use =c-u C-M-X= in =Insert Mode=
 
 * PlantUML should be installed and configured for UML
-*** Download the plantuml.jar from maven repo
-*** Download graphviz if diagrams other than sequence and activity are needed
-*** Set the environment variable GRAPHVIZ_DOT to C:\Users\43999174\graphviz-2.38\release\bin\dot.exe for instance
+- Download the plantuml.jar from maven repo
+- Download graphviz if diagrams other than sequence and activity are needed
+- Set the environment variable GRAPHVIZ_DOT to C:\Users\43999174\graphviz-2.38\release\bin\dot.exe for instance
 
 * Set default font for =spacemacs=
 #+BEGIN_SRC emacs-lisp
