@@ -1,6 +1,6 @@
 #+title: Learning emacs lisp
 #+startup: showall
-
+#+author: Tom Liang
 
 * basic operation
 ** =car= and =cdr=
@@ -54,12 +54,95 @@
 * list
 
 ** =alist=
+   
+*** add-to-list for alist
+    #+BEGIN_SRC emacs-lisp
+      (let ((test--package-archives '(("gnu" . "http://elpa.gnu.org/packages/"))))
+	(add-to-list 'test--package-archives '("test1" . "test1 value"))
+	(add-to-list 'test--package-archives '("test2" . "test1 value"))
+	(add-to-list 'test--package-archives '("test2" . "test1 value being changed")))
+    #+END_SRC
+
+    #+RESULTS:
+    : ((test2 . test1 value being changed) (test2 . test1 value) (test1 . test1 value) (gnu . http://elpa.gnu.org/packages/))
+
+*** add-to-list for list
+    #+BEGIN_SRC elisp
+      ;; `test--list being the list-var
+      (let ((test--list '(1 2 3)))
+	    (add-to-list 'test--list 4))
+    #+END_SRC
+
+    #+RESULTS:
+    | 4 | 1 | 2 | 3 |
+    
+*** assoc
+    #+BEGIN_SRC elisp
+      ;;; return an alist with key being the key
+      (assoc "test" '(("test" . "test value") ("test1" "testing test1")))
+    #+END_SRC
+
+    #+RESULTS:
+    : (test . test value)
+
+*** cons
+    #+BEGIN_SRC elisp
+      ;; parameters not using reference
+      (let ((test--list '(1 2 3)))
+	(cons 4 test--list))
+    #+END_SRC
+
+    #+RESULTS:
+    | 4 | 1 | 2 | 3 |
+
+* buffer
+
+** buffer-modified-tick
    #+BEGIN_SRC emacs-lisp
-     (let ((test--package-archives '(("gnu" . "http://elpa.gnu.org/packages/"))))
-       (add-to-list 'test--package-archives '("test1" . "test1 value"))
-       (add-to-list 'test--package-archives '("test2" . "test1 value"))
-       (add-to-list 'test--package-archives '("test2" . "test1 value being changed")))
+     (buffer-modified-tick)
    #+END_SRC
 
    #+RESULTS:
-   : ((test2 . test1 value being changed) (test2 . test1 value) (test1 . test1 value) (gnu . http://elpa.gnu.org/packages/))
+   : 2100
+
+* dash
+  
+** -let for just one pair of source and target
+   #+BEGIN_SRC elisp
+     (-let [(a b c) (list 1 2 3)]
+       (message "%s %s %s" a b c))
+   #+END_SRC
+
+   #+RESULTS:
+   : 1 2 3
+
+** -let for multiple pairs of source and target
+   #+BEGIN_SRC elisp
+     (-let (((a b c) (list 1 2 3))
+	    ((d . e) (cons 4 5))
+	    (f 6))
+       (list a b c d e f))
+   #+END_SRC
+
+   #+RESULTS:
+   | 1 | 2 | 3 | 4 | 5 | 6 |
+
+* cl library
+** cl-destructuring-bind
+   #+BEGIN_SRC elisp
+     (cl-destructuring-bind (a b c d e) (list 1 2 3 4 5)
+       (list a b c d e))
+   #+END_SRC
+
+** threading macro
+   #+BEGIN_SRC elisp
+     ;; same as in clojure
+     (-> (list 1 2 3 4 5)
+	 (last)
+	 (car))
+   #+END_SRC
+
+   #+RESULTS:
+   : 5
+
+
