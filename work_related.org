@@ -1,0 +1,7 @@
+#+title: work and learn notes
+#+startup: showall
+
+* work note
+** Oracle
+   - to set connection add =tnsnames.ora= in the path similiar to D:\app\Administrator\product\11.2.0\client_1\network\admin,
+   - http://betteratoracle.com/posts/45-the-performance-cost-of-clobs should be referred later for clob performance analysis.
