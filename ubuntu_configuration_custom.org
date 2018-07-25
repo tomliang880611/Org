@@ -1,0 +1,41 @@
+#+title: Notes for configuration and customizing Ubuntu
+#+starup: overview
+
+* Software install
+  #+BEGIN_SRC shell
+sudo apt-get install -y network-manager-openvpn network-manager-openvpn-gnome
+sudo apt-get install gdebi
+sudo apt-get install ultra-flat-icons
+sudo apt-get remove unity-webapps-common 
+sudo apt-get remove thunderbird totem rhythmbox empathy brasero simple-scan gnome-mahjongg
+sudo apt-get remove gnome-mines cheese transmission-common gnome-orca webbrowser-app
+sudo apt-get remove libreoffice-common
+sudo apt-get install fatrat
+sudo apt-get install -y nodejs
+sudo apt-get install -y node
+sudo apt-get install keynav
+sudo apt-get install tlp tlp-rdw
+sudo apt-get install dconf-editor11
+sudo apt-get install dconf-editor
+sudo apt-get install indicator-cpufreq
+sudo apt-get install linux-tools-generic
+sudo apt-get install linux-tools
+sudo apt-get install linux-tools-common
+sudo apt-get install ukuu
+sudo apt-get install gtk+
+sudo apt-get install libxpm-dev libgif-dev
+sudo apt-get install libXaw
+sudo apt-get install libxaw
+sudo apt-get install emacs25
+sudo apt-get install build-essential texinfo libx11-dev libxpm-dev libjpeg-dev libpng-dev libgif-dev libtiff-dev libgtk2.0-dev libncurses-dev libxpm-dev automake autoconf
+sudo apt-get install emacs-snapshot
+sudo apt-get install emacs25
+sudo apt-get install default-jdk
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y cabal-install-1.22 ghc-7.10.3
+  #+END_SRC
+
+* Configuration for Graphics Cards
+** Disable nVidia graphics cards for battery consumption
+* Useful commands
+** =fc-list= list the available fonts

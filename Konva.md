@@ -1,0 +1,3 @@
+* Konva Reminder
+** Konva.Line
+*** x, y is used to set the axis base...
