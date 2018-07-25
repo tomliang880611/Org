@@ -5,3 +5,12 @@
 ** Oracle
    - to set connection add =tnsnames.ora= in the path similiar to D:\app\Administrator\product\11.2.0\client_1\network\admin,
    - http://betteratoracle.com/posts/45-the-performance-cost-of-clobs should be referred later for clob performance analysis.
+** Weblogic
+   - to enable or disable security for a given url path
+     - web filter add/delete an entry
+     - add/delete an entry in =security-constraint=
+** mybatis
+   - When Echance cache is suitable? a fit for app that has lots of writes?
+     the following links can be referred.
+     + [[https://dzone.com/articles/caching-over-mybatis-widelly][dzone mybatis cache info]]
+     + [[http://www.mybatis.org/ehcache-cache/][ehcache-cache official]] 
